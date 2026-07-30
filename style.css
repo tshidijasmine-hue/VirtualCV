@@ -34,13 +34,14 @@ html {
 
 /* ===== HEADER / NAVIGATION ===== */
 header {
-    background: #2C2C2C;
-    padding: 15px 5%;
+    background: rgba(44,44,44,0.9);
+    backdrop-filter: blur(10px);
+    padding: 18px 5%;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(44, 44, 44, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,.2);
 }
 
 nav {
