@@ -164,14 +164,29 @@ h2::after {
 }
 
 .home-text h1 {
-    font-size: 48px;
+    font-size: 58px;
     font-weight: 700;
+    line-height: 1.1;
+    margin: 10px 0;
     color: #2C2C2C;
-    margin: 5px 0 10px 0;
 }
 
-.home-text h1 span {
+#typingName span {
     color: #E76F51;
+}
+
+#typingName::after {
+    content: "|";
+    color: #E76F51;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+
+    50% {
+        opacity: 0;
+    }
+
 }
 
 .title {
@@ -574,9 +589,19 @@ footer {
 
 
 .hero-description{
-    max-width:550px;
-    font-size:17px;
+    max-width:600px;
+    font-size:18px;
     color:#6B7280;
     margin:20px 0 30px;
     line-height:1.8;
+    min-height:60px;
+}
+
+.fade{
+    opacity:0;
+    transition:opacity .6s ease;
+}
+
+.show{
+    opacity:1;
 }

@@ -71,3 +71,42 @@ document.querySelectorAll('section').forEach(section => {
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(section);
 });
+
+
+// ==============================
+// TYPING NAME
+// ==============================
+
+const fullName = "Retshedisitswe Mokadi";
+const typingName = document.getElementById("typingName");
+
+let currentIndex = 0;
+
+function typeName() {
+
+    if (currentIndex < fullName.length) {
+
+        const currentText = fullName.substring(0, currentIndex + 1);
+
+        if (currentText.includes(" ")) {
+
+            const names = currentText.split(" ");
+
+            typingName.innerHTML =
+                names[0] + " <span>" + names.slice(1).join(" ") + "</span>";
+
+        } else {
+
+            typingName.textContent = currentText;
+
+        }
+
+        currentIndex++;
+
+        setTimeout(typeName, 120);
+
+    }
+
+}
+
+typeName();
