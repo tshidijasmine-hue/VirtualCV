@@ -1,5 +1,4 @@
-//Mobile menu
-
+// ===== MOBILE MENU =====
 const menuToggle = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
@@ -7,14 +6,14 @@ menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// close menu on link click
+// Close menu on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
     });
 });
 
-// for smooth scrolling 
+// ===== SMOOTH SCROLLING =====
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -29,7 +28,7 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-// active nav link on scroll
+// ===== ACTIVE NAV LINK ON SCROLL =====
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -50,7 +49,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// face in on scroll
+// ===== FADE IN ON SCROLL =====
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -72,41 +71,39 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-
-
-// TYPING NAME function
-
-
+// ===== TYPING NAME FUNCTION =====
 const fullName = "Retshedisitswe Mokadi";
 const typingName = document.getElementById("typingName");
 
 let currentIndex = 0;
 
 function typeName() {
-
     if (currentIndex < fullName.length) {
-
         const currentText = fullName.substring(0, currentIndex + 1);
-
         if (currentText.includes(" ")) {
-
             const names = currentText.split(" ");
-
-            typingName.innerHTML =
-                names[0] + " <span>" + names.slice(1).join(" ") + "</span>";
-
+            typingName.innerHTML = names[0] + " <span>" + names.slice(1).join(" ") + "</span>";
         } else {
-
             typingName.textContent = currentText;
-
         }
-
         currentIndex++;
-
         setTimeout(typeName, 120);
-
     }
-
 }
 
 typeName();
+
+// ===== BACK TO TOP BUTTON =====
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+    } else {
+        backToTop.classList.remove('show');
+    }
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

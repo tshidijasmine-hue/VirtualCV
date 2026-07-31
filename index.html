@@ -43,14 +43,18 @@
                 <div class="home-text">
                     <p class="greeting">Hi, I'm</p>
                     <h1><span id="typingName"></span></h1>
-                    <p class="title">Third-Year BSc Information Technology Student</p>
+                    <p class="title">BSc Information Technology Student | Developer</p>
                     
 
                     <p class="hero-description">
-                        Passionate about software development, web technologies, programming, and building practical technology solutions that make a difference.
+                        I enjoy turning ideas into practical digital solutions through programming, web development, and technology
                     </p>
 
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Vanderbijlpark, South Africa</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Gauteng, South Africa</p>
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Open to internship opportunities
+                    </div>
                     <div class="home-buttons">
                         <a href="assets/Retshedisitswe_Mokadi_CV.pdf" download class="btn primary">Download CV</a>
                         <a href="#projects" class="btn secondary">View Projects</a>
@@ -77,7 +81,7 @@
 
                 <p>Currently seeking internship or graduate opportunities where I can apply my knowledge and continue developing within the IT industry.</p>
                 <div class="about-details">
-                    <div><strong>📍 Location:</strong> Vanderbijlpark, South Africa</div>
+                    <div><strong>📍 Location:</strong> Gauteng, South Africa</div>
 
                     <div><strong>🎓 University:</strong> North-West University</div>
                     <div><strong>📅 Graduation:</strong> 2026</div>
@@ -130,35 +134,41 @@
     </section>
 
 
+    
     <!--Projects Sections-->
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
+                
+                <!-- Project 1: Blue River Zoo -->
                 <div class="project-card">
                     <div class="project-icon">🏛️</div>
-                    <h3>Blue River Zoo</h3>
-                    <p class="tech">ASP.NET | C#</p>
-                    <p>Full-stack web app with role-based access for Visitors, Staff, and Administrators.</p>
+                    <h3>Blue River Zoo Management System</h3>
+                    <p class="tech">ASP.NET Web Forms · C# · SQL Server</p>
+                    <p>A full-stack management system developed for the Blue River Zoo, featuring role-based functionality for Visitors, Staff, and Administrators.</p>
                     <a href="https://github.com/tsholofelospicegirl17-hub/BlueRiverZoo" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
                 </div>
+
+                <!-- Project 2: Rock Paper Scissors -->
                 <div class="project-card">
                     <div class="project-icon">✊📄✂️</div>
                     <h3>Rock Paper Scissors</h3>
-                    <p class="tech">HTML | JS | CSS</p>
-                    <p>Interactive game with score tracking, AI opponent, and motivational messages.</p>
+                    <p class="tech">HTML | JavaScript | CSS</p>
+                    <p>Interactive browser game with score tracking, AI opponent, restart functionality, and motivational messages.</p>
                     <a href="https://github.com/tshidijasmine-hue/RockPaperScissors" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
                 </div>
 
+                <!-- Project 3: Virtual CV -->
                 <div class="project-card">
                     <div class="project-icon">📑</div>
                     <h3>Virtual CV</h3>
-                    <p class="tech">HTML | CSS | JS</p>
-                    <p>Responsive virtual CV website showcasing skills, projects, and contact information.</p>
+                    <p class="tech">HTML | CSS | JavaScript</p>
+                    <p>Responsive virtual CV website showcasing skills, projects, and contact information with a modern design.</p>
                     <a href="https://github.com/tshidijasmine-hue/VirtualCV" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
@@ -178,11 +188,14 @@
                     <i class="fas fa-shield-alt"></i>
                     <h3>Introduction to Cybersecurity</h3>
                     <p>Cisco Networking Academy</p>
+
+                    <a href="assets/CiscoCertificate.pdf" target="blank" rel="noopener noreferrer">View Certificate →</a>
                 </div>
                 <div class="cert-card">
                     <i class="fas fa-lock"></i>
                     <h3>Introduction to Cryptography</h3>
                     <p>Simplilearn</p>
+                    <a href="assets/SimplilearnCertificate.pdf" target="blank" rel="noopener noreferrer">View Certificate →</a>
                 </div>
             </div>
         </div>
@@ -232,9 +245,34 @@
         </div>
     </section>
 
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
     <!--Footer-->
     <footer>
-        <p>&copy; 2026 Retshedisitswe Mokadi. All rights reserved.</p>
+        <div class="footer-content">
+
+            <div class="footer-logo">RM</div>
+
+            <p>
+                Designed & developed by Retshedisitswe Mokadi
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://github.com/tshidijasmine-hue" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/retshedisitswe-mokadi-87059b392" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:tshidijasmine@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <small>© 2026 Retshedisitswe Mokadi</small>
+
+        </div>
     </footer>
 
     <script src="script.js"></script>
