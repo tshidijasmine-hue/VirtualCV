@@ -708,6 +708,108 @@ footer {
 .profile-image img:hover {
     animation-play-state: paused;
 }
+/* ===== PROJECT CARD STYLES (ADD THIS ENTIRE BLOCK) ===== */
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.project-github {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #2C2C2C;
+    color: #FAF8F5;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-github:hover {
+    background: #D4A373;
+    transform: rotate(8deg) scale(1.1);
+}
+
+/* Project Footer */
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid rgba(44, 44, 44, 0.08);
+}
+
+.project-footer span {
+    font-size: 12px;
+    color: #8B7D6B;
+    font-weight: 500;
+}
+
+.project-footer a {
+    color: #E76F51;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project-footer a:hover {
+    color: #D4A373;
+}
+
+/* Project Actions (for cards with multiple links) */
+.project-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.project-actions a {
+    color: #E76F51;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project-actions a:hover {
+    color: #D4A373;
+}
+
+/* Project Status Badge */
+.project-status {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    background: #E76F51;
+    color: #FAF8F5;
+}
+
+/* In Progress Card Style */
+.project-in-progress {
+    opacity: 0.85;
+}
+
+.project-in-progress .project-icon {
+    opacity: 0.7;
+}
+
+/* Coming Soon Text */
+.coming-soon {
+    font-size: 12px;
+    color: #D4A373;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
@@ -836,3 +938,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
