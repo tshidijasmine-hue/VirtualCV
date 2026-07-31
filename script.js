@@ -1,4 +1,4 @@
-// Mobile menu
+//Mobile menu
 
 const menuToggle = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
@@ -73,9 +73,9 @@ document.querySelectorAll('section').forEach(section => {
 });
 
 
-// ==============================
-// TYPING NAME
-// ==============================
+
+// TYPING NAME function
+
 
 const fullName = "Retshedisitswe Mokadi";
 const typingName = document.getElementById("typingName");
